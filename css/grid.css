@@ -1,6 +1,8 @@
 
 
-
+.weather {
+    display: grid;
+}
 
 @media screen and (min-width: 750px){
 

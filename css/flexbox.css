@@ -1,4 +1,26 @@
 .climate{
-    display: flexbox;
+    display: flex;
+    justify-content: center;
 }
 
+
+@media screen and (min-width: 600px){
+    .climate{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+
+@media screen and (min-width: 600px){
+    .climate{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 800px){
+    .climate{
+        flex-direction: row;
+    }
+}

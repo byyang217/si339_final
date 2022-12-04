@@ -1,27 +1,50 @@
 * {
-    background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+body{
+    background-color: darkblue;
 }
 
 nav ul li{
-    display: inline;
+    display: flex;
 }
 
-h1 {
-    margin: 50px;
+div{
+    padding: 10px;
 }
+
+h1{
+    margin: 40px;  
+    font-size: 20px;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .skip a{
     position: relative;
-    top: -40px;
+    top: -90px;
 }
   
   /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
   
 .skip a:focus{
-    top:  60px; 
+    top: 15px;
 }
 
+.skip a:visited{
+    color: #ffffff;
+}
+
+div img{
+    border: yellow solid 9px;
+    border-radius: 6px;
+}
 /* nav buttons */
 .btn {
     background: #3498db;
@@ -35,9 +58,14 @@ h1 {
     border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin: 5px;
+  }
+
+  .here{
+    font-weight: bold;
   }
   
   .btn:hover, .btn:focus {
@@ -49,5 +77,27 @@ h1 {
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
     font-style: italic;
+    margin: 5px;
   }
 
+/* breakpoint decided by the width of Nexus 7 (2013) viewport size */
+
+@media screen and (min-width: 600px){
+    ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* breakpoint decided by the width of iPad Pro viewport size of 768px, plus a bit less due to minumum needed for nav to span one row from link emphasis*/
+
+@media screen and (min-width: 745px){
+    h1{
+        font-size: 24px;
+    }
+    p{
+        font-size: 18px;
+        width: 70%;
+    }
+}

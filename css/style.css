@@ -25,6 +25,9 @@ main{
     flex-direction: column;
 }
 
+footer p{
+    margin: 10px;
+}
 
 .skip a{
     position: relative;
